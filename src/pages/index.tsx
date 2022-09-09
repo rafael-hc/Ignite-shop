@@ -1,6 +1,6 @@
 import { styled } from "../styles"
 
-const Button = styled('button',{
+const Button = styled('button', {
   backgroundColor: '$green-light',
   border: 0,
   borderRadius: 4,
@@ -15,6 +15,9 @@ const Button = styled('button',{
 
 export default function Home() {
   return (
-    <Button>Hello World!!</Button>
+    <>
+      <Button>Hello World!!</Button>
+      <p>oi</p>
+    </>
   )
 }
