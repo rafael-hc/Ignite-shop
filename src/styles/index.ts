@@ -19,6 +19,12 @@ export const {
             "text": "#C4C4CC",
             "title": "#E1E1E6",
             "white": "#FFFFFF"
+        },
+        fontSizes:{
+            md: '1.125rem',
+            lg: '1.25rem',
+            xl: '1.5rem',
+            '2xl': '2rem'
         }
     }
 })
