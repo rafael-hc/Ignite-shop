@@ -1,7 +1,10 @@
 import { styled } from "..";
 
+
+
 export const HomeContainer = styled('main',{
     display: "flex",
+    flexDirection: "column",
     // gap: "3rem",
     width: "100%",
     maxWidth: "calc(100vw - ((100vw - 1180px) / 2))",
@@ -9,6 +12,7 @@ export const HomeContainer = styled('main',{
     minHeight: 656
 
 })
+
 
 export const Product = styled('div',{
     background: 'linear-gradient(180deg, #1ea483 0%, #7465d4 100%)',
