@@ -10,6 +10,7 @@ import Link from "next/link";
 import Head from "next/head";
 import { useState } from "react";
 import { Arrow } from "../components/Arrow";
+import { useShoppingCart } from 'use-shopping-cart'
 
 
 
@@ -39,6 +40,7 @@ export default function Home({ products }: HomeProps) {
       setLoaded(true)
     }
   })
+  const {cartCount} = useShoppingCart()
 
   return (
     <>
@@ -85,6 +87,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const response = await stripe.products.list({
     expand: ['data.default_price']
   })
+  console.log(response.data)
 
   const products = response.data.map(product => {
     const price = product.default_price as Stripe.Price
@@ -99,6 +102,7 @@ export const getStaticProps: GetStaticProps = async () => {
       }).format(price.unit_amount / 100)
     }
   })
+  
 
   return {
     props: {
