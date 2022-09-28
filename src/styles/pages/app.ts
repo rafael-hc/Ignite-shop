@@ -1,10 +1,10 @@
-import { styled } from "..";
+import { styled } from '..'
 
 export const Container = styled('div', {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "flex-start",
-    justifyContent: "center",
-    minHeight: "100vh"
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'flex-start',
+  justifyContent: 'center',
+  minHeight: '100vh',
+  paddingTop: '7.5rem ',
 })
-
