@@ -47,7 +47,7 @@ export default function Success({ customerName, products }: SuccessProps) {
           {` ${products.length} `}camisetas já está a caminho da sua casa.{' '}
         </p>
 
-        <Link href="/">Voltar ao catálogo</Link>
+        <a href="/">Voltar ao catálogo</a>
       </SuccessContainer>
     </>
   )

@@ -6,9 +6,9 @@ const nextConfig = {
   images: {
     domains: ['files.stripe.com', 'static.musictoday.com'],
   },
-  experimental:{
-    newNextLinkBehavior: true
-  }
+  experimental: {
+    newNextLinkBehavior: true,
+  },
 }
 
 module.exports = nextConfig

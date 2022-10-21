@@ -1,5 +1,5 @@
 import { styled } from '@stitches/react'
-import * as Popover from '@radix-ui/react-popover'
+import * as Dialog from '@radix-ui/react-dialog'
 
 export const CartContent = styled('div', {
   height: '100%',
@@ -110,16 +110,18 @@ export const ItemDescription = styled('div', {
   },
 })
 
-export const PopoverContent = styled(Popover.Content, {
-  width: 480,
+export const DialogContent = styled(Dialog.Content, {
+  width: '100%',
+  maxWidth: 480,
   height: '100vh',
   padding: '4.5rem 3rem',
   backgroundColor: '$elements',
   position: 'fixed',
-  top: -84,
-  left: -86,
+  top: 0,
+  right: 0,
+  zIndex: 9999,
 })
-export const PopoverClose = styled(Popover.Close, {
+export const DialogClose = styled(Dialog.Close, {
   width: '3rem',
   height: '3rem',
   position: 'absolute',

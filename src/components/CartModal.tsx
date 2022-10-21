@@ -3,6 +3,7 @@ import Image from 'next/future/image'
 import { useShoppingCart, formatCurrencyString } from 'use-shopping-cart'
 import { X } from 'phosphor-react'
 import axios from 'axios'
+
 import {
   BodyCart,
   CartContent,
@@ -11,8 +12,8 @@ import {
   Item,
   ItemDescription,
   ItemImage,
-  PopoverClose,
-  PopoverContent,
+  DialogClose,
+  DialogContent,
 } from '../styles/components/cartModal'
 
 export const CartModal = () => {
@@ -49,10 +50,10 @@ export const CartModal = () => {
   }
 
   return (
-    <PopoverContent>
-      <PopoverClose>
+    <DialogContent>
+      <DialogClose>
         <X size={24} />
-      </PopoverClose>
+      </DialogClose>
       <CartContent>
         <strong>Sacola</strong>
 
@@ -112,6 +113,6 @@ export const CartModal = () => {
           <p>Cart is empty.</p>
         )}
       </CartContent>
-    </PopoverContent>
+    </DialogContent>
   )
 }
